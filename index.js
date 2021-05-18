@@ -11,29 +11,53 @@ let fuelMassKg = 760000;
 let shuttleMassKg = 74842.31;
 let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
 let fuelTempCelsius = -225;
-let fuelLevel = 100;
+let fuelLevel = 1;
 let weatherStatus = "clear";
+let theLine = "-------------------------------------"
 // Write code to generate the LC04 report here:
-console.log("date: " + date);
-console.log("time: " + time);
-console.log("ASTRONAUT INFO");
-console.log("count: " + astronautCount);
-console.log("status: " + astronautStatus);
-console.log("FUEL DATA");
-console.log("Fuel temp celsius: " + fuelTempCelsius);
-console.log("Fuel level: " + fuelLevel);
-console.log("MASS DATA");
-console.log("Crew mass: " + crewMassKg);
-console.log("Fuel mass: " + fuelMassKg);
-console.log("Shuttle mass: " + shuttleMassKg);
-console.log("Total mass: " + totalMassKg);
+console.log(theLine);
+console.log("> LC04 - LAUNCH CHECKLIST");
+console.log(theLine);
 
-console.log("FLIGHT PLAN");
 
-console.log("weather: " + weatherStatus);
+console.log("Date: " + date);
+console.log("Time: " + time);
+console.log("\n");
 
-console.log("Overall Status");
-console.log("Clear for takeoff: YES")
+console.log(theLine);
+console.log("> ASTRONAUT INFO");
+console.log(theLine);
+console.log("* count: " + astronautCount);
+console.log("* status: " + astronautStatus);
+console.log("\n");
+
+console.log(theLine);
+console.log("> FUEL DATA");
+console.log(theLine);
+
+console.log("* Fuel temp celsius: " + fuelTempCelsius + "C");
+console.log("* Fuel level: " + fuelLevel * 100 + "%");
+console.log("\n");
+
+console.log(theLine);
+console.log("> MASS DATA");
+console.log(theLine);
+console.log("* Crew mass: " + crewMassKg);
+console.log("* Fuel mass: " + fuelMassKg);
+console.log("* Shuttle mass: " + shuttleMassKg);
+console.log("* Total mass: " + totalMassKg);
+console.log("\n");
+
+console.log(theLine);
+console.log("> FLIGHT PLAN");
+console.log(theLine);
+console.log("* weather: " + weatherStatus);
+console.log("\n");
+
+console.log(theLine);
+console.log("> Overall Status");
+console.log(theLine);
+console.log("* Clear for takeoff: YES")
 
 // When done, have your TA check your code.
 
